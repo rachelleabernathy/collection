@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinosaurs</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Some Dynomite Dinosaurs</h1>
+    <p>Recently listened to a podcast about dinosaur DNA and now can't stop thinking about them!</p>
+    
+    <div id="dinosaurs">
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Meaning</th>
+                <th>Time Period</th>
+                <th>Geographical Location</th>
+                <th>Size</th>
+                <th>Diet</th>
+            </thead>
+
+            <tbody>
+                <tr v-for="(item, index) in dinoList" v-bind:class="{even: (index + 1) % 2 === 0, odd: (index + 1) % 2 !==0}">
+                    <td>{{item.name}}</td>
+                    <td>{{item.meaning}}</td>
+                    <td>{{item.time}}</td>
+                    <td>{{item.geo}}</td>
+                    <td>{{item.size}}</td>
+                    <td>{{item.diet}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

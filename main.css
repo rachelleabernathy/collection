@@ -1,0 +1,46 @@
+html {
+    background-color: darkslategrey;
+}
+
+.odd {
+    background-color: lightcyan;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 40 px;
+    font-size: xx-large;
+    text-align: center;
+    color: floralwhite;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 20;
+    font-size: small;
+    text-align: center;
+    color: floralwhite;
+}
+
+table {
+    align-self: center;
+    margin-left: 120px;
+    background-color: floralwhite;
+    padding: 40 px;
+    border-radius: 10px;
+    border: solid 1px pink;
+}
+
+th {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    font-size: small;
+    text-transform: uppercase;
+}
+
+td {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    font-size: small;
+
+}
